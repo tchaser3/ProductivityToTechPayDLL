@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.28922.388
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ProductivityToTechPayDLL", "ProductivityToTechPayDLL\ProductivityToTechPayDLL.csproj", "{94BF14A6-5FEA-4D58-AF3F-FE9566D5741C}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{94BF14A6-5FEA-4D58-AF3F-FE9566D5741C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{94BF14A6-5FEA-4D58-AF3F-FE9566D5741C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{94BF14A6-5FEA-4D58-AF3F-FE9566D5741C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{94BF14A6-5FEA-4D58-AF3F-FE9566D5741C}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {CE546821-0E35-4E08-8DD2-89E8D2678469}
+	EndGlobalSection
+EndGlobal

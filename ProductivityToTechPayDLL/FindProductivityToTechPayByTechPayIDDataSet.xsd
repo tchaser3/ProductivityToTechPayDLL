@@ -28,6 +28,7 @@
               <Mapping SourceColumn="TechPayID" DataSetColumn="TechPayID" />
               <Mapping SourceColumn="JobDescription" DataSetColumn="JobDescription" />
               <Mapping SourceColumn="TechPayCode" DataSetColumn="TechPayCode" />
+              <Mapping SourceColumn="TechPayPrice" DataSetColumn="TechPayPrice" />
             </Mappings>
             <Sources />
           </TableAdapter>
@@ -39,7 +40,7 @@
   <xs:element name="FindProductivityToTechPayByTechPayIDDataSet" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="True" msprop:Generator_DataSetName="FindProductivityToTechPayByTechPayIDDataSet" msprop:Generator_UserDSName="FindProductivityToTechPayByTechPayIDDataSet">
     <xs:complexType>
       <xs:choice minOccurs="0" maxOccurs="unbounded">
-        <xs:element name="FindProductivityToTechPayByTechPayID" msprop:Generator_TableClassName="FindProductivityToTechPayByTechPayIDDataTable" msprop:Generator_TableVarName="tableFindProductivityToTechPayByTechPayID" msprop:Generator_TablePropName="FindProductivityToTechPayByTechPayID" msprop:Generator_RowDeletingName="FindProductivityToTechPayByTechPayIDRowDeleting" msprop:Generator_RowChangingName="FindProductivityToTechPayByTechPayIDRowChanging" msprop:Generator_RowEvHandlerName="FindProductivityToTechPayByTechPayIDRowChangeEventHandler" msprop:Generator_RowDeletedName="FindProductivityToTechPayByTechPayIDRowDeleted" msprop:Generator_UserTableName="FindProductivityToTechPayByTechPayID" msprop:Generator_RowChangedName="FindProductivityToTechPayByTechPayIDRowChanged" msprop:Generator_RowEvArgName="FindProductivityToTechPayByTechPayIDRowChangeEvent" msprop:Generator_RowClassName="FindProductivityToTechPayByTechPayIDRow">
+        <xs:element name="FindProductivityToTechPayByTechPayID" msprop:Generator_TableClassName="FindProductivityToTechPayByTechPayIDDataTable" msprop:Generator_TableVarName="tableFindProductivityToTechPayByTechPayID" msprop:Generator_RowChangedName="FindProductivityToTechPayByTechPayIDRowChanged" msprop:Generator_TablePropName="FindProductivityToTechPayByTechPayID" msprop:Generator_RowDeletingName="FindProductivityToTechPayByTechPayIDRowDeleting" msprop:Generator_RowChangingName="FindProductivityToTechPayByTechPayIDRowChanging" msprop:Generator_RowEvHandlerName="FindProductivityToTechPayByTechPayIDRowChangeEventHandler" msprop:Generator_RowDeletedName="FindProductivityToTechPayByTechPayIDRowDeleted" msprop:Generator_RowClassName="FindProductivityToTechPayByTechPayIDRow" msprop:Generator_UserTableName="FindProductivityToTechPayByTechPayID" msprop:Generator_RowEvArgName="FindProductivityToTechPayByTechPayIDRowChangeEvent">
           <xs:complexType>
             <xs:sequence>
               <xs:element name="TransactionID" msdata:ReadOnly="true" msdata:AutoIncrement="true" msprop:Generator_ColumnVarNameInTable="columnTransactionID" msprop:Generator_ColumnPropNameInRow="TransactionID" msprop:Generator_ColumnPropNameInTable="TransactionIDColumn" msprop:Generator_UserColumnName="TransactionID" type="xs:int" />
@@ -66,6 +67,7 @@
                   </xs:restriction>
                 </xs:simpleType>
               </xs:element>
+              <xs:element name="TechPayPrice" msprop:Generator_ColumnVarNameInTable="columnTechPayPrice" msprop:Generator_ColumnPropNameInRow="TechPayPrice" msprop:Generator_ColumnPropNameInTable="TechPayPriceColumn" msprop:Generator_UserColumnName="TechPayPrice" type="xs:decimal" />
             </xs:sequence>
           </xs:complexType>
         </xs:element>

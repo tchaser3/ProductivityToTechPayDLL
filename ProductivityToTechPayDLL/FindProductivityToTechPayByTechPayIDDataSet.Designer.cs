@@ -291,6 +291,8 @@ namespace ProductivityToTechPayDLL {
             
             private global::System.Data.DataColumn columnTechPayCode;
             
+            private global::System.Data.DataColumn columnTechPayPrice;
+            
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
             public FindProductivityToTechPayByTechPayIDDataTable() {
@@ -374,6 +376,14 @@ namespace ProductivityToTechPayDLL {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public global::System.Data.DataColumn TechPayPriceColumn {
+                get {
+                    return this.columnTechPayPrice;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
             [global::System.ComponentModel.Browsable(false)]
             public int Count {
                 get {
@@ -409,7 +419,7 @@ namespace ProductivityToTechPayDLL {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public FindProductivityToTechPayByTechPayIDRow AddFindProductivityToTechPayByTechPayIDRow(int ProductivityID, string WorkTask, int TechPayID, string JobDescription, string TechPayCode) {
+            public FindProductivityToTechPayByTechPayIDRow AddFindProductivityToTechPayByTechPayIDRow(int ProductivityID, string WorkTask, int TechPayID, string JobDescription, string TechPayCode, decimal TechPayPrice) {
                 FindProductivityToTechPayByTechPayIDRow rowFindProductivityToTechPayByTechPayIDRow = ((FindProductivityToTechPayByTechPayIDRow)(this.NewRow()));
                 object[] columnValuesArray = new object[] {
                         null,
@@ -417,7 +427,8 @@ namespace ProductivityToTechPayDLL {
                         WorkTask,
                         TechPayID,
                         JobDescription,
-                        TechPayCode};
+                        TechPayCode,
+                        TechPayPrice};
                 rowFindProductivityToTechPayByTechPayIDRow.ItemArray = columnValuesArray;
                 this.Rows.Add(rowFindProductivityToTechPayByTechPayIDRow);
                 return rowFindProductivityToTechPayByTechPayIDRow;
@@ -453,6 +464,7 @@ namespace ProductivityToTechPayDLL {
                 this.columnTechPayID = base.Columns["TechPayID"];
                 this.columnJobDescription = base.Columns["JobDescription"];
                 this.columnTechPayCode = base.Columns["TechPayCode"];
+                this.columnTechPayPrice = base.Columns["TechPayPrice"];
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -470,6 +482,8 @@ namespace ProductivityToTechPayDLL {
                 base.Columns.Add(this.columnJobDescription);
                 this.columnTechPayCode = new global::System.Data.DataColumn("TechPayCode", typeof(string), null, global::System.Data.MappingType.Element);
                 base.Columns.Add(this.columnTechPayCode);
+                this.columnTechPayPrice = new global::System.Data.DataColumn("TechPayPrice", typeof(decimal), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnTechPayPrice);
                 this.Constraints.Add(new global::System.Data.UniqueConstraint("Constraint1", new global::System.Data.DataColumn[] {
                                 this.columnTransactionID}, true));
                 this.columnTransactionID.AutoIncrement = true;
@@ -484,6 +498,7 @@ namespace ProductivityToTechPayDLL {
                 this.columnJobDescription.MaxLength = 2147483647;
                 this.columnTechPayCode.AllowDBNull = false;
                 this.columnTechPayCode.MaxLength = 2147483647;
+                this.columnTechPayPrice.AllowDBNull = false;
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -689,6 +704,17 @@ namespace ProductivityToTechPayDLL {
                     this[this.tableFindProductivityToTechPayByTechPayID.TechPayCodeColumn] = value;
                 }
             }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public decimal TechPayPrice {
+                get {
+                    return ((decimal)(this[this.tableFindProductivityToTechPayByTechPayID.TechPayPriceColumn]));
+                }
+                set {
+                    this[this.tableFindProductivityToTechPayByTechPayID.TechPayPriceColumn] = value;
+                }
+            }
         }
         
         /// <summary>
@@ -856,6 +882,7 @@ namespace ProductivityToTechPayDLL.FindProductivityToTechPayByTechPayIDDataSetTa
             tableMapping.ColumnMappings.Add("TechPayID", "TechPayID");
             tableMapping.ColumnMappings.Add("JobDescription", "JobDescription");
             tableMapping.ColumnMappings.Add("TechPayCode", "TechPayCode");
+            tableMapping.ColumnMappings.Add("TechPayPrice", "TechPayPrice");
             this._adapter.TableMappings.Add(tableMapping);
         }
         
